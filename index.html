@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Core SCSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>QLICKS test</title>
+</head>
+<body>
+<div class="container">
+    <!-- Navigation -->
+    <div class="d-flex flex-column flex-md-row align-items-end align-items-sm-center pt-3 pl-4 pr-2 pb-0 mb-1 mb-md-5 navbar">
+        <div class="d-flex flex-md-row ml-md-auto mr-md-auto ml-lg-0 align-items-center">
+            <a class="navbar-brand pt-2" href="#">
+                <img src="images/logo.png" class="align-top logo-img" alt="logo">
+            </a>
+            <h6 class="mr-md-auto ml-2 logo-text">ecommerce solutions</h6>
+        </div>
+        <nav class="d-flex flex-column flex-sm-row align-items-sm-end">
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Omnichannel</a>
+            <a class="nav-item" href="#">Work</a>
+            <a class="nav-item" href="#">Contact</a>
+        </nav>
+    </div>
+
+    <!--Content-->
+    <div class="row pt-sm-5 ml-sm-0 content">
+        <div class="col-md-10 col-lg-9 pl-0 pr-0 pr-lg-5 pt-5 ml-md-5">
+            <div class="p-5 m-4 contact-block position-relative justify-content-center d-flex flex-column">
+                <h1 class="contact-block-text">Snel contact:</h1>
+                <h1 class="contact-block-number">+31 35 677 6666</h1>
+            </div>
+
+            <form class="col-md-10 col-lg-8 ml-lg-0 ml-md-5 offset-lg-0 mb-5 needs-validation contact-form" novalidate>
+                <p class="contact-form-text">Of vul onderstaand contactformulier in en wij zullen uw vraag zo spoedig mogelijk beantwoorden.</p>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Naam" required>
+                    <div class="invalid-feedback">
+                        Your name is required.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                        Your email is required.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="telephone" placeholder="Telefoonnummer" maxlength="15" required>
+                    <div class="invalid-feedback">
+                        Your phone number is required.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control contact-form-textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Type hier je bericht..."></textarea>
+                </div>
+                <button class="btn btn-lg btn-block" type="submit">Verzenden</button>
+            </form>
+
+            <div class="col-md-10 col-md-2 col-lg-6 ml-md-5 info-block-wrapper">
+                <div class="mb-3 d-flex flex-column info-block">
+                    <h6 class="info-block-header">Qlicks</h6>
+                    <p class="info-block-text">Koos Postemalaan 2 (Gateway C) 1217 ZC Hilversum</p>
+                    <h6 class="info-block-header">KvK</h6>
+                    <p class="info-block-text">12345678</p>
+                    <h6 class="info-block-header">BTW</h6>
+                    <p class="info-block-text">NL1234567.A01</p>
+                </div>
+
+                <img src="images/google-maps.png" class="maps" alt="maps">
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer d-flex flex-sm-row flex-column justify-content-between">
+        <p class="footer-info">© 2020 Quulicks - Ecommerce Solutions</p>
+        <p class="footer-anchor"><a class="text-dark" href="#">Terug naar boven ^</a></p>
+    </footer>
+
+</div>
+
+<script>
+    // Validation script
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+</body>
+</html>
